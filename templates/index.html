@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encryption App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Text Encryption and Decryption</h1>
+    <div>
+        <textarea id="inputText" placeholder="Enter text here..."></textarea>
+    </div>
+    <div>
+        <button onclick="encryptText()">Encrypt</button>
+        <button onclick="decryptText()">Decrypt</button>
+    </div>
+    <div>
+        <h2>Output</h2>
+        <p id="outputText"></p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
